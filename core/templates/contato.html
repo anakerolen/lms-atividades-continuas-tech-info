@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato</title>
+	</head>
+
+	<body>
+			<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/contato">Contato</a></li>
+			</ul>
+		</nav>
+		<form method="get" position: relative>
+			<fieldset style="width: 300px"><legend>Formulário de Contato</legend>
+				<label for="nomeCompleto">Nome Completo:</label><br>
+				<input type="text" name="nomeCompleto" id="nomeCompleto" maxlength="100" required><br><br>
+
+				<label for="emailRemetente">E-mail do Remetente:</label><br>
+				<input type="email" name="emailRemetente" id="emailRemetente" maxlength="100" placeholder="exemplo@exemplo.com" required><br><br>
+
+				<label for="assuntoMensagem">Assunto da Mensagem:</label><br>
+				<select name="assunto" required >
+					<option>Bug</option>
+					<option>Reclamações</option>
+					<option>Sugestões</option>
+				</select><br><br>
+
+				<label for="mensagem" >Texto da Mensagem:</label><br>
+				<textarea name="mensagem" id="mensagem" required></textarea><br><br>
+
+				<input type="submit" name="enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</body>
+</html>
