@@ -17,9 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from core.views import *
 
-urlpatterns = [
-    path('admin', admin.site.urls),
+urlpatterns = [ # No mapeamento de URLS, a / no fim é obrigatória pelo Django!
+    path('admin/', admin.site.urls),
     path('',index),
-    path('login',login),
-    path('contato',contato),
+    path('login/',login),
+    path('contato/',contato),
 ]
